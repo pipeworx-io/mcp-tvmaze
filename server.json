@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/tvmaze",
   "title": "Tvmaze",
   "description": "TVMaze MCP — TV show metadata, episodes, schedules (no auth)",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/tvmaze",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-tvmaze",

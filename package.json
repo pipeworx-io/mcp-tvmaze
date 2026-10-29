@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-tvmaze",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "TVMaze MCP — TV show metadata, episodes, schedules (no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-tvmaze": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tvmaze"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-tvmaze.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/tvmaze",
   "pipeworx": {
-    "sourceHash": "v1-b433afa432d795c251a2693b84b04622714168e1cd24a08322a6d919182a0045",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "tvmaze",
+    "gatewaySlug": "tvmaze",
+    "sourceHash": "v1-b2732db68e5324526b6ea53f2d59def55f9bb34552a82a833fe10165b13b7e01",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
